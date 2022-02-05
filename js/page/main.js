@@ -1,4 +1,4 @@
-$(document).ready(function($) {
+jQuery(document).ready(function($) {
 
 
     $("#timelinediv").load("html/timeline.html", function() {
