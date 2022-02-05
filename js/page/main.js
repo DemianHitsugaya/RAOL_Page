@@ -29,88 +29,74 @@ jQuery(document).ready(function($) {
     //     interval: 3500
     // });
 
+    //#region Chart C#
+    const datacvb = {
+        labels: ['C#', 'VB .Net'],
+        datasets: [{
+            label: '.Net',
+            data: [85, 15],
+            backgroundColor: [
+                '#1abc9c',
+                '#ecf0f1'
+            ],
+            hoverOffset: 4
+        }]
+    };
 
-    // const data1 = {
-    //     datasets: [{
-    //             label: '70',
-    //             data: 70,
-    //             backgroundColor: "#1abc9c"
-    //         },
-    //         {
-    //             label: '30',
-    //             data: 30,
-    //             backgroundColor: "#ecf0f1"
-    //         }
-    //     ]
-    // }
+    var configCVB = {
+        type: 'doughnut',
+        data: datacvb,
+        options: {
+            responsive: true,
+            plugins: {
+                legend: {
+                    position: 'top',
+                    labels: {
+                        color: '#fff'
+                    }
+                },
+            }
+        },
+    };
 
-    // var config1 = {
-    //     type: 'doughnut',
-    //     data: data1,
-    //     options: {
-    //         responsive: true,
-    //         plugins: {
-    //             legend: {
-    //                 position: 'top',
-    //             },
-    //         }
-    //     },
-    // };
+    const ctxcvb = $('#cvb');
+    const chartCVB = new Chart(ctxcvb, configCVB);
 
-    // var chartNet = new Chart(document.getElementById('net'), config1);
+    //#endregion
 
-    // var doughnutData = [{
-    //         value: 90,
-    //         color: "#1abc9c"
-    //     },
-    //     {
-    //         value: 10,
-    //         color: "#ecf0f1"
-    //     }
-    // ];
-    // var myDoughnut = new Chart(document.getElementById("bootstrap").getContext("2d")).Doughnut(doughnutData);
+    //#region  Chart .Net & Net Core 
 
-    // var doughnutData = [{
-    //         value: 65,
-    //         color: "#1abc9c"
-    //     },
-    //     {
-    //         value: 35,
-    //         color: "#ecf0f1"
-    //     }
-    // ];
-    // var myDoughnut = new Chart(document.getElementById("wordpress").getContext("2d")).Doughnut(doughnutData);
+    const dataNet = {
+        labels: ['.Net', '.Net Core'],
+        datasets: [{
+            label: '.Net',
+            data: [55, 45],
+            backgroundColor: [
+                '#1abc9c',
+                '#ecf0f1'
+            ],
+            hoverOffset: 4
+        }]
+    };
 
-    // var doughnutData = [{
-    //         value: 80,
-    //         color: "#1abc9c"
-    //     },
-    //     {
-    //         value: 20,
-    //         color: "#ecf0f1"
-    //     }
-    // ];
-    // var myDoughnut = new Chart(document.getElementById("html").getContext("2d")).Doughnut(doughnutData);
+    var configNet = {
+        type: 'doughnut',
+        data: dataNet,
+        options: {
+            responsive: true,
+            plugins: {
+                legend: {
+                    position: 'top',
+                    labels: {
+                        color: '#fff'
+                    }
+                },
+            }
+        },
+    };
 
-    // var doughnutData = [{
-    //         value: 70,
-    //         color: "#1abc9c"
-    //     },
-    //     {
-    //         value: 30,
-    //         color: "#ecf0f1"
-    //     }
-    // ];
-    // var myDoughnut = new Chart(document.getElementById("photoshop").getContext("2d")).Doughnut(doughnutData);
+    const ctxNet = $('#net');
+    const chartNet = new Chart(ctxNet, configNet);
+    //#endregion
 
-    // var doughnutData = [{
-    //         value: 50,
-    //         color: "#1abc9c"
-    //     },
-    //     {
-    //         value: 50,
-    //         color: "#ecf0f1"
-    //     }
-    // ];
-    // var myDoughnut = new Chart(document.getElementById("illustrator").getContext("2d")).Doughnut(doughnutData);
 });
