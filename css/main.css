@@ -210,8 +210,7 @@ p {
 #footwrap a.social {
     padding: 5px;
     zoom: 1.5;
-    transform: scale(1.5);
-    transform-origin: 150% 0;
+    -moz-transform: scale(1.5);
 }
 
 #copyrights {
