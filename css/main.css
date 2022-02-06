@@ -207,6 +207,11 @@ p {
     font-weight: 700;
 }
 
+#footwrap a.social {
+    padding: 5px;
+    zoom: 1.5;
+}
+
 #copyrights {
     background: #222222;
     padding: 20px 0;

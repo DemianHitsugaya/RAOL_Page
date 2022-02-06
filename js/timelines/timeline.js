@@ -1,4 +1,4 @@
-var eventsMinDistance = 60;
+var eventsMinDistance = 36;
 
 function initTimeline(timelines) {
     timelines.each(function() {
