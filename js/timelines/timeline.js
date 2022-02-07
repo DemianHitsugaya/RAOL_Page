@@ -13,6 +13,8 @@ function initTimeline(timelines) {
         timelineComponents['timelineNavigation'] = timeline.find('.cd-timeline-navigation');
         timelineComponents['eventsContent'] = timeline.children('.events-content');
 
+        debugger;
+
         setDatePosition(timelineComponents, eventsMinDistance);
 
         var timelineTotWidth = setTimelineWidth(timelineComponents, eventsMinDistance);
